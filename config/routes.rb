@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   resources :books
   resources :subjects
